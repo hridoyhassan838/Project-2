@@ -1,0 +1,41 @@
+.
+├── .gitignore
+├── README.md
+├── next.config.js
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── public
+│   ├── assets
+│   │   ├── icons
+│   │   └── images
+│   │       └── 1.png
+│   └── favicon.ico
+├── src
+│   ├── components
+│   │   ├── Footer.jsx
+│   │   ├── Header.jsx
+│   │   ├── Hero.jsx
+│   │   └── SeoHead.jsx
+│   ├── context
+│   │   └── AuthContext.jsx
+│   ├── hooks
+│   │   └── useAuth.js
+│   ├── layouts
+│   │   └── MainLayout.jsx
+│   ├── pages
+│   │   ├── _app.js
+│   │   ├── about.jsx
+│   │   ├── blog
+│   │   │   └── [slug].jsx
+│   │   └── index.jsx
+│   ├── services
+│   │   └── api.js
+│   ├── styles
+│   │   ├── globals.css
+│   │   └── tailwind.css
+│   └── utils
+│       └── formatDate.js
+└── tailwind.config.js
+
+15 directories, 24 files

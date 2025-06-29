@@ -1,0 +1,26 @@
+# Node modules (ডিপেনডেন্সি ফোল্ডার)
+node_modules/
+
+# Next.js build আউটপুট
+.next/
+
+# Vite build আউটপুট (ডিফল্ট dist ফোল্ডার)
+dist/
+
+# লোকাল এনভায়রনমেন্ট ফাইল
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# লগ ফাইল
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Mac OS সিস্টেম ফাইল
+.DS_Store
+
+# VSCode সেটিংস (অপশনাল)
+.vscode/
