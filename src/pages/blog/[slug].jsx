@@ -1,4 +1,4 @@
-import SeoHead from "..../components/SeoHead";
+import SeoHead from "../../components/SeoHead";
 
 export default function BlogPost({ post }) {
   return (
