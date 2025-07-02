@@ -7,7 +7,6 @@
 ├── postcss.config.js
 ├── public
 │   ├── assets
-│   │   ├── icons
 │   │   └── images
 │   │       └── 1.png
 │   └── favicon.ico
@@ -15,8 +14,9 @@
 │   ├── components
 │   │   ├── Footer.jsx
 │   │   ├── Header.jsx
-│   │   ├── Hero.jsx
-│   │   └── SeoHead.jsx
+│   │   ├── LiveNewsBar.jsx
+│   │   ├── SeoHead.jsx
+│   │   └── icons.js
 │   ├── context
 │   │   └── AuthContext.jsx
 │   ├── hooks
@@ -38,4 +38,4 @@
 │       └── formatDate.js
 └── tailwind.config.js
 
-15 directories, 24 files
+14 directories, 25 files

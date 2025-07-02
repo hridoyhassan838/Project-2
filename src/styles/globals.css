@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* overscroll effect */
+.no-scroll-shadow {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  box-shadow: none;
+}
+
+/* scrollbar */
+.no-scroll-shadow::-webkit-scrollbar {
+  display: none;
+}

@@ -1,6 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-BASE_DIR="$HOME/next.js-vite-react-postcss-tailwindcss"
+BASE_DIR="$HOME/Project-2"
 PROJECT_MAP_DIR="$BASE_DIR/project-map"
 UPDATE_SCRIPT="$PROJECT_MAP_DIR/update-project-map.sh"
 

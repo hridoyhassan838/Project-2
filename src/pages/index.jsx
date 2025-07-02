@@ -1,4 +1,8 @@
 import SeoHead from "../components/SeoHead";
+import Header from "../components/Header";
+import LiveNewsBar from "../components/LiveNewsBar";
+import Footer from "../components/Footer";
+import Image from "next/image";
 
 export default function HomePage() {
   return (
@@ -8,9 +12,47 @@ export default function HomePage() {
         description="Stay informed with the latest global headlines and insights."
         keywords="news, global, headlines"
       />
-      <main>
-        {/* তোমার হোমপেজের বাকি অংশ */}
+      <Header />
+      <LiveNewsBar />
+      <main
+        className="max-w-7xl mx-auto w-full bg-gray-100 px-4"
+        role="main"
+        aria-label="Main content"
+      >
+        {/* Repeatable Post Block */}
+        <section className="flex flex-col lg:flex-row items-start border-t-2 border-black pt-4">
+          <article className="w-full lg:w-1/2">
+            <h2 className="text-3xl font-bold text-gray-900 pb-2">
+              Kennedy Names New Members of C.D.C. Vaccine Panel
+            </h2>
+            <p className="text-2xl text-gray-700 font-[Merriweather]">
+              President Trump left the G7 summit in Canada after joining other
+              leaders in issuing a joint statement calling for peace in the
+              region.
+            </p>
+            <time className="block text-xs text-gray-500 py-2">5 MIN READ</time>
+          </article>
+          
+          
+          
+          <div className="w-full lg:w-1/2 p-x lg:pl-4">
+  <Image
+    src="/assets/images/1.png"
+    alt="Kennedy names new CDC members"
+    width={4096}
+    height={4096}
+    className="rounded shadow-md"
+  />
+  <p className="text-right text-xs text-gray-500 py-2">
+    From One New World
+  </p>
+</div>
+          
+          
+          
+        </section>
       </main>
+      <Footer />
     </>
   );
 }

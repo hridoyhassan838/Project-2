@@ -4,7 +4,7 @@
 EXCLUDE_DIRS=".git node_modules project-map .next"
 
 # ✅ প্রোজেক্টের মূল ফোল্ডার ও টার্গেট ফাইল
-BASE_DIR="$HOME/next.js-vite-react-postcss-tailwindcss"
+BASE_DIR="$HOME/Project-2"
 PROJECT_MAP_DIR="$BASE_DIR/project-map"
 TREE_FILE="$PROJECT_MAP_DIR/all-tree.text"
 

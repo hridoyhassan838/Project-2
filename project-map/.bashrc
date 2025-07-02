@@ -1,0 +1,1 @@
+bash ~/Project-2/project-map/update-project-map.sh
