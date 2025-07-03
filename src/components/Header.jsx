@@ -12,12 +12,14 @@ export default function Header() {
       <nav
         className="relative flex items-center justify-between px-4 py-4"
         role="navigation"
-        aria-label="Main navigation">
+        aria-label="Main navigation"
+      >
         <a
           href="#"
           aria-label="Open Main Menu"
-          className="text-base sm:text-3xl text-black hover:text-gray-600 transition-colors duration-200">
-          <DynamicFontAwesomeIcon icon="bars" />
+          className="text-base sm:text-3xl text-black hover:text-gray-600 transition-colors duration-200"
+        >
+          <DynamicFontAwesomeIcon icon="bars" title="Menu" />
         </a>
         <h1 className="text-2xl sm:text-4xl absolute left-1/2 -translate-x-1/2 text-black text-center font-semibold font-serif whitespace-nowrap">
           One New World
@@ -27,7 +29,7 @@ export default function Header() {
           aria-label="Go to User Account"
           className="text-base sm:text-3xl text-black hover:text-gray-600 transition-colors duration-200"
         >
-          <DynamicFontAwesomeIcon icon="user" />
+          <DynamicFontAwesomeIcon icon="user" title="User Account" />
         </a>
       </nav>
 

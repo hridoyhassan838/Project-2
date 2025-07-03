@@ -26,7 +26,6 @@
 │   ├── pages
 │   │   ├── _app.js
 │   │   ├── _document.js
-│   │   ├── about.jsx
 │   │   ├── blog
 │   │   │   └── [slug].jsx
 │   │   └── index.jsx
@@ -39,4 +38,4 @@
 │       └── formatDate.js
 └── tailwind.config.js
 
-14 directories, 26 files
+14 directories, 25 files
