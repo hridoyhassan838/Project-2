@@ -1,4 +1,5 @@
-import { useRouter } from "next/router";
+// pages/blog/[slug].jsx
+
 import SeoHead from "../../components/SeoHead";
 
 const posts = [
@@ -18,18 +19,30 @@ const posts = [
   },
 ];
 
-export default function BlogPost() {
-  const router = useRouter();
-  const { slug } = router.query;
+export async function getStaticPaths() {
+  const paths = posts.map((post) => ({
+    params: { slug: post.slug },
+  }));
 
-  // যদি slug পাওয়া যায়, তাহলে posts থেকে মেলানো পোস্ট খোঁজা
-  const post = posts.find((p) => p.slug === slug);
+  return {
+    paths,
+    fallback: false, // কোনো slug না মিলে 404 দেখাবে
+  };
+}
 
-  // যদি পোস্ট না পাওয়া যায় বা পেজ এখনও লোড হচ্ছে
+export async function getStaticProps({ params }) {
+  const post = posts.find((p) => p.slug === params.slug);
+
   if (!post) {
-    return <p>Loading or Post not found...</p>;
+    return { notFound: true };
   }
 
+  return {
+    props: { post },
+  };
+}
+
+export default function BlogPost({ post }) {
   return (
     <>
       <SeoHead
@@ -37,10 +50,10 @@ export default function BlogPost() {
         description={post.excerpt}
         keywords={post.tags.join(", ")}
       />
-      <article>
-        <h1>{post.title}</h1>
-        <p>{post.content}</p>
-      </article>
+      <main className="container mx-auto p-4">
+        <h1 className="text-3xl font-bold mb-4">{post.title}</h1>
+        <p className="text-gray-700">{post.content}</p>
+      </main>
     </>
   );
 }
