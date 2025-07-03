@@ -5,6 +5,11 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-}
+  experimental: {
+    // Modern Browsers Only
+    legacyBrowsers: false,
+    modern: true,
+  },
+};
 
 module.exports = nextConfig;

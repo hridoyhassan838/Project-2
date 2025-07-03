@@ -35,13 +35,14 @@ export default function HomePage() {
           
           
           
-          <div className="w-full lg:w-1/2 p-x lg:pl-4">
+          <div className="w-full lg:w-1/2 lg:pl-4">
   <Image
-    src="/assets/images/1.png"
+    src="/assets/images/1.jpg"
     alt="Kennedy names new CDC members"
-    width={4096}
-    height={4096}
+    width={1024}
+    height={1024}
     className="rounded shadow-md"
+    priority
   />
   <p className="text-right text-xs text-black py-2">
     From One New World
