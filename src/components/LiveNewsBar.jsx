@@ -6,7 +6,7 @@ export default function LiveNewsBar() {
     mx-auto
     overflow-x-auto
     overflow-y-hidden
-    bg-gray-100
+    bg-white
     py-3
     scrollbar-none
     no-scroll-shadow
