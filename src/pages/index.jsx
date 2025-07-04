@@ -37,10 +37,10 @@ export default function HomePage() {
           
           <div className="w-full lg:w-1/2 lg:pl-4">
   <Image
-    src="/assets/images/1.jpg"
+    src="/assets/images/1.webp"
     alt="Kennedy names new CDC members"
-    width={1024}
-    height={1024}
+    width={979}
+    height={979}
     sizes="(max-width: 1024px) 100vw, 50vw"
     className="rounded shadow-md"
     priority
