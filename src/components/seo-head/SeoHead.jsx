@@ -1,6 +1,3 @@
-// components/SeoHead.js
-
-
 import Head from 'next/head';
 
 export default function SeoHead({

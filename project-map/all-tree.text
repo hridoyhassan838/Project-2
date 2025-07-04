@@ -12,11 +12,19 @@
 │   └── favicon.ico
 ├── src
 │   ├── components
-│   │   ├── Footer.jsx
-│   │   ├── Header.jsx
-│   │   ├── LiveNewsBar.jsx
-│   │   ├── SeoHead.jsx
-│   │   └── icons.js
+│   │   ├── footer
+│   │   │   └── Footer.jsx
+│   │   ├── header
+│   │   │   └── Header.jsx
+│   │   ├── icon
+│   │   │   └── icons.js
+│   │   ├── live-news-bar
+│   │   │   └── LiveNewsBar.jsx
+│   │   ├── main-content
+│   │   │   ├── MainContent.jsx
+│   │   │   └── PostBlock.jsx
+│   │   └── seo-head
+│   │       └── SeoHead.jsx
 │   ├── context
 │   │   └── AuthContext.jsx
 │   ├── hooks
@@ -38,4 +46,4 @@
 │       └── formatDate.js
 └── tailwind.config.js
 
-14 directories, 25 files
+20 directories, 27 files
