@@ -33,7 +33,7 @@ export default function Header() {
         </a>
       </nav>
 
-      <section className="flex flex-col sm:flex-row items-center justify-between gap-2 px-4 py-2 bg-white border-t border-gray-300 text-center sm:text-left">
+      <section className="flex flex-col sm:flex-row items-center justify-between gap-2 px-4 py-4 bg-white border-t border-gray-300 text-center sm:text-left">
         <time className="text-xs sm:text-sm text-black">
           Saturday, May 31, 2025
         </time>
