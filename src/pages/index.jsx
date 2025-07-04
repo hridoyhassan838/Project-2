@@ -41,6 +41,7 @@ export default function HomePage() {
     alt="Kennedy names new CDC members"
     width={1024}
     height={1024}
+    sizes="(max-width: 1024px) 100vw, 50vw"
     className="rounded shadow-md"
     priority
   />
