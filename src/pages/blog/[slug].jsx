@@ -1,6 +1,6 @@
 // pages/blog/[slug].jsx
 
-import SeoHead from "../../components/SeoHead";
+import SeoHead from "../../components/seo-head/SeoHead";
 
 const posts = [
   {
