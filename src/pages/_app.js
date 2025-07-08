@@ -1,7 +1,12 @@
 import "../styles/globals.css";
-import "@fortawesome/fontawesome-svg-core/styles.css"; // এই লাইনটা থাকা দরকার
-import "../components/icon/icons"; // এখানে তোমার icons.js
+import "../lib/fontawesome/Fontawesome";
+
+import MainLayout from "../layouts/MainLayout";
 
 export default function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  return (
+    <MainLayout>
+      <Component {...pageProps} />
+    </MainLayout>
+  );
 }

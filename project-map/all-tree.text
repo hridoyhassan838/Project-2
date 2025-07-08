@@ -15,35 +15,47 @@
 │   │   ├── footer
 │   │   │   └── Footer.jsx
 │   │   ├── header
-│   │   │   └── Header.jsx
-│   │   ├── icon
-│   │   │   └── icons.js
+│   │   │   ├── Header.js
+│   │   │   ├── MenuButton.js
+│   │   │   ├── UserButton.js
+│   │   │   └── icon-bars-menu
+│   │   │       ├── FullMenu.js
+│   │   │       ├── MenuHeader.js
+│   │   │       ├── MenuItemList.js
+│   │   │       └── MenuSearchBar.js
+│   │   ├── icons
+│   │   │   ├── ChevronDownIcon.js
+│   │   │   └── CloseIcon.js
 │   │   ├── live-news-bar
 │   │   │   └── LiveNewsBar.jsx
 │   │   ├── main-content
 │   │   │   ├── MainContent.jsx
 │   │   │   └── PostBlock.jsx
 │   │   └── seo-head
-│   │       └── SeoHead.jsx
+│   │       └── SeoHead.js
 │   ├── context
 │   │   └── AuthContext.jsx
 │   ├── hooks
-│   │   └── useAuth.js
+│   │   └── useMenuControl.js
 │   ├── layouts
-│   │   └── MainLayout.jsx
+│   │   └── MainLayout.js
+│   ├── lib
+│   │   └── fontawesome
+│   │       ├── DynamicIcons.js
+│   │       └── Fontawesome.js
 │   ├── pages
 │   │   ├── _app.js
 │   │   ├── _document.js
 │   │   ├── blog
 │   │   │   └── [slug].jsx
-│   │   └── index.jsx
+│   │   └── index.js
 │   ├── services
 │   │   └── api.js
 │   ├── styles
 │   │   ├── globals.css
 │   │   └── tailwind.css
 │   └── utils
-│       └── formatDate.js
+│       └── getTodayDate.js
 └── tailwind.config.js
 
-20 directories, 27 files
+23 directories, 36 files
