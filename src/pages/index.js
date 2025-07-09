@@ -1,8 +1,11 @@
 import SeoHead from "../components/seo-head/SeoHead";
+
+import MainLayout from "../layouts/MainLayout";
+
 import MainContent from "../components/main-content/MainContent";
 import PostBlock from "../components/main-content/PostBlock";
 
-export default function HomePage() {
+function HomePage() {
   return (
     <>
       <SeoHead />
@@ -22,3 +25,11 @@ export default function HomePage() {
     </>
   );
 }
+
+// Layout apply
+HomePage.getLayout = function getLayout(page) {
+  return <MainLayout>{page}</MainLayout>;
+};
+
+// export default
+export default HomePage;

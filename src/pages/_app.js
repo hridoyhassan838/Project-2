@@ -1,12 +1,8 @@
+// pages/_app.js
 import "../styles/globals.css";
 import "../lib/fontawesome/Fontawesome";
 
-import MainLayout from "../layouts/MainLayout";
-
 export default function MyApp({ Component, pageProps }) {
-  return (
-    <MainLayout>
-      <Component {...pageProps} />
-    </MainLayout>
-  );
+  const getLayout = Component.getLayout || ((page) => page);
+  return getLayout(<Component {...pageProps} />);
 }

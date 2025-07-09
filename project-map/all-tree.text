@@ -38,6 +38,7 @@
 │   ├── hooks
 │   │   └── useMenuControl.js
 │   ├── layouts
+│   │   ├── HeaderTitle.js
 │   │   └── MainLayout.js
 │   ├── lib
 │   │   └── fontawesome
@@ -48,7 +49,8 @@
 │   │   ├── _document.js
 │   │   ├── blog
 │   │   │   └── [slug].jsx
-│   │   └── index.js
+│   │   ├── index.js
+│   │   └── login.js
 │   ├── services
 │   │   └── api.js
 │   ├── styles
@@ -58,4 +60,4 @@
 │       └── getTodayDate.js
 └── tailwind.config.js
 
-23 directories, 36 files
+23 directories, 38 files
